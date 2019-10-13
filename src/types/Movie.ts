@@ -1,10 +1,12 @@
 export interface Movie {
-    title: string
-    id: string
-    year: string
-    genre: string
-    director: string
-    writer: string
-    actors: string
-    ratings: string
+    Title?: string
+    Id?: string
+    Year?: string
+    Genre?: string
+    Director?: string
+    Writer?: string
+    Actors?: string
+    Ratings?: []
 }
+
+export default Movie
