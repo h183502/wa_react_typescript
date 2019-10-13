@@ -19,6 +19,8 @@ const Movies = (state: State) => {
                    {/*{state.movie.Ratings && state.movie.Ratings.map((ratings, index) => (*/}
                    {/*     <li key={index}>{ratings}</li>*/}
                    {/* ))}*/}
+                   <li>{state.movie.Plot}</li>
+                    <li>{state.movie.BoxOffice}</li>
                 </ul>
 
         </div>

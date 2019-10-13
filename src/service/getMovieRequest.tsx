@@ -39,6 +39,7 @@ class GetMovieByTitle extends React.Component<{}, IOwnState> {
     display: grid;
     grid-template-columns: auto auto;
     padding: 5px;
+    font-family: ubuntu sans-serif;
     `;
     cssGridItem = css`
     padding: 20px;
@@ -46,20 +47,25 @@ class GetMovieByTitle extends React.Component<{}, IOwnState> {
     text-align: center;
     background-color: Linen;
     border: 1px solid
+    font-family: ubuntu sans-serif;
     `;
     cssHeader = css`
     text-align: center;
-    background-color: NavajoWhite;
-    color: dimgray;
+    background-color: #8645C0;
+    color: #FAFDFF;
     font-size: 40px;
     padding: 25px;
+    font-family: ubuntu sans-serif;
     `;
     cssFooter = css`
     text-align: center;
     font-size: 20px;
-    background-color: navajowhite;
-    color: dimgray;
-    
+    background-color: #8645C0;
+    color: #FAFDFF;
+    font-family: ubuntu sans-serif;
+    `;
+    cssButton = css`
+    cursor: pointer;
     `;
 
 
@@ -77,7 +83,7 @@ class GetMovieByTitle extends React.Component<{}, IOwnState> {
                                    value={this.state.title}
                                    onChange={this.setTitle}
                             />
-                            <button onClick={this.searchByTitle}>Søk</button>
+                            <button css={this.cssButton} onClick={this.searchByTitle}>Søk</button>
                         </p>
                     </div>
                     <div css={this.cssGridItem}>

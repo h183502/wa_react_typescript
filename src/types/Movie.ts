@@ -7,6 +7,8 @@ export interface Movie {
     Writer?: string
     Actors?: string
     Ratings?: []
+    Plot?: string
+    BoxOffice?: string
 }
 
 export default Movie
